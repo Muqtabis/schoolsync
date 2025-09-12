@@ -1,0 +1,16 @@
+[build]
+  # The command Netlify runs to build your site
+  command = "npm run build"
+
+  # The directory where your build output is located
+  publish = "dist"
+
+[build.environment]
+  # Set a specific Node version compatible with your project
+  NODE_VERSION = "18.18.2"
+
+  # Prevent Netlify from installing optional dependencies like fsevents
+  NPM_CONFIG_OPTIONAL = "false"
+
+  # Optional: Bypass peer dependency conflicts (sometimes needed with Vite plugins)
+  NPM_FLAGS = "--legacy-peer-deps"
