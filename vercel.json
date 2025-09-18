@@ -7,7 +7,5 @@
       "destination": "/api/feedback/general"
     }
   ],
-  "build": {
-    "outputDirectory": "build"
-  }
+  "outputDirectory": "build"
 }
