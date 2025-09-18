@@ -1,14 +1,12 @@
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
-const ScrollToTop = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
-
-export default ScrollToTop;
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      components: path.resolve(__dirname, './src/components'),
+    },
+  },
+})
