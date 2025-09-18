@@ -54,12 +54,11 @@
       }
     },
     "scripts": {
-  "dev": "vite",
-  "start": "vite",
-  "build": "vite build ",
-  "serve": "vite preview"
-},
-
+      "dev": "vite",
+      "start": "vite",
+      "build": "vite build ",
+      "serve": "vite preview"
+    },
     "node_modules/@adobe/css-tools": {
       "version": "4.4.4",
       "resolved": "https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.4.4.tgz",
@@ -6881,5 +6880,8 @@
         "node": ">= 14.6"
       }
     }
+  },
+  "devDependencies": {
+    "vite": "^7.1.6"
   }
 }
